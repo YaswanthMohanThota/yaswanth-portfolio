@@ -110,7 +110,7 @@ function App() {
 
             <div className="hero-image-wrap">
               <div className="profile-circle">
-                <img src="/profile.png" alt="Venkata Sai Yaswanth Mohan Thota" />
+                <img src={`${import.meta.env.BASE_URL}profile.png`} alt="Venkata Sai Yaswanth Mohan Thota" />
               </div>
               <div className="hero-card">
                 <Briefcase size={28} />
