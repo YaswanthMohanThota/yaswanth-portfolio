@@ -117,6 +117,7 @@ function App() {
                 <div>
                   <div className="hero-card-title">4.0 GPA</div>
                   <div className="hero-card-sub">MS Robotics</div>
+                  <div className="hero-card-exp">3 Years Experience</div>
                 </div>
               </div>
             </div>

@@ -65,10 +65,11 @@ a {
 .hero {
   min-height: calc(100vh - 78px);
   background-image:
-    linear-gradient(rgba(15, 23, 42, 0.35), rgba(15, 23, 42, 0.48)),
-    url('https://images.unsplash.com/photo-1532968961962-8a0cb3a2d4f5?auto=format&fit=crop&w=1800&q=80');
+    linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.78)),
+    url('/background.png');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-overlay {
@@ -193,6 +194,12 @@ a {
   color: #64748b;
 }
 
+.hero-card-exp {
+  font-size: 15px;
+  color: #334155;
+  font-weight: 700;
+  margin-top: 6px;
+}
 .section {
   padding: 90px 0;
 }
