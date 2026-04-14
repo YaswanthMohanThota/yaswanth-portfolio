@@ -263,46 +263,46 @@ const projects = [
       'Connected the full chain from sensor data to robot motion.',
     ],
   },
-  {
-    id: 'stereo-vo',
-    title: 'Stereo Visual Odometry',
-    subtitle: 'KITTI · OpenCV · PnP + RANSAC · SE(3)',
-    summary:
-      'Built a stereo visual odometry pipeline for depth estimation, feature tracking, motion recovery, and trajectory evaluation.',
-    previewType: 'gif',
-    previewSrc: `${base}projects/stereo-vo.gif`,
-    previewPosition: '50% 50%',
-    previewScale: 1.08,
-    badge: 'Perception',
-    github: 'https://github.com/YaswanthMohanThota',
-    tags: ['OpenCV', 'Stereo Vision', 'PnP', 'RANSAC'],
-    cardHighlights: ['Classical vision stack', 'Geometry-driven odometry'],
-    hoverHint: 'Inspect the pipeline',
-    hasExplore: true,
-    exploreType: 'preview',
-    problem:
-      'Recovering camera motion from vision alone is hard because of noisy correspondences, scale sensitivity, and drift accumulation over time.',
-    solution:
-      'I built a stereo visual odometry pipeline from classical computer-vision components including disparity-based depth estimation, feature extraction, 3D correspondences, PnP with RANSAC, and SE(3) trajectory composition.',
-    impact:
-      'The project produced a full geometry-based odometry stack that can be analyzed, debugged, and benchmarked instead of treated as a black-box perception result.',
-    metrics: [
-      ['Input', 'Stereo image pairs'],
-      ['Estimation', 'PnP + RANSAC'],
-      ['Pose', 'SE(3) composition'],
-      ['Validation', 'KITTI trajectory comparison'],
-    ],
-    systemFlow: ['Stereo Images', 'Depth Estimation', 'Feature Matching', 'Pose Recovery', 'Trajectory Output'],
-    decision:
-      'Key engineering decision: kept the pipeline geometry-driven and interpretable so every failure mode in matching, pose estimation, and drift could be inspected directly.',
-    tools: ['OpenCV', 'KITTI', 'PnP', 'RANSAC', 'SE(3)', 'Stereo Geometry'],
-    details: [
-      'Implemented disparity-based depth estimation and feature-based matching from scratch.',
-      'Used PnP with RANSAC and fallback geometric logic for motion estimation.',
-      'Recovered full trajectories by composing incremental camera poses.',
-      'Evaluated drift against KITTI ground truth.',
-    ],
-  },
+  // {
+  //   id: 'stereo-vo',
+  //   title: 'Stereo Visual Odometry',
+  //   subtitle: 'KITTI · OpenCV · PnP + RANSAC · SE(3)',
+  //   summary:
+  //     'Built a stereo visual odometry pipeline for depth estimation, feature tracking, motion recovery, and trajectory evaluation.',
+  //   previewType: 'gif',
+  //   previewSrc: `${base}projects/stereo-vo.gif`,
+  //   previewPosition: '50% 50%',
+  //   previewScale: 1.08,
+  //   badge: 'Perception',
+  //   github: 'https://github.com/YaswanthMohanThota',
+  //   tags: ['OpenCV', 'Stereo Vision', 'PnP', 'RANSAC'],
+  //   cardHighlights: ['Classical vision stack', 'Geometry-driven odometry'],
+  //   hoverHint: 'Inspect the pipeline',
+  //   hasExplore: true,
+  //   exploreType: 'preview',
+  //   problem:
+  //     'Recovering camera motion from vision alone is hard because of noisy correspondences, scale sensitivity, and drift accumulation over time.',
+  //   solution:
+  //     'I built a stereo visual odometry pipeline from classical computer-vision components including disparity-based depth estimation, feature extraction, 3D correspondences, PnP with RANSAC, and SE(3) trajectory composition.',
+  //   impact:
+  //     'The project produced a full geometry-based odometry stack that can be analyzed, debugged, and benchmarked instead of treated as a black-box perception result.',
+  //   metrics: [
+  //     ['Input', 'Stereo image pairs'],
+  //     ['Estimation', 'PnP + RANSAC'],
+  //     ['Pose', 'SE(3) composition'],
+  //     ['Validation', 'KITTI trajectory comparison'],
+  //   ],
+  //   systemFlow: ['Stereo Images', 'Depth Estimation', 'Feature Matching', 'Pose Recovery', 'Trajectory Output'],
+  //   decision:
+  //     'Key engineering decision: kept the pipeline geometry-driven and interpretable so every failure mode in matching, pose estimation, and drift could be inspected directly.',
+  //   tools: ['OpenCV', 'KITTI', 'PnP', 'RANSAC', 'SE(3)', 'Stereo Geometry'],
+  //   details: [
+  //     'Implemented disparity-based depth estimation and feature-based matching from scratch.',
+  //     'Used PnP with RANSAC and fallback geometric logic for motion estimation.',
+  //     'Recovered full trajectories by composing incremental camera poses.',
+  //     'Evaluated drift against KITTI ground truth.',
+  //   ],
+  // },
   {
     id: 'forth-tech',
     title: 'Forth Tech Quadruped Robot',
@@ -1318,7 +1318,7 @@ function App() {
               icon={Mail}
               eyebrow="Contact / Collaboration Channel"
               title="Let’s build something useful."
-              lead="Open to conversations around robotics, perception, system integration, deployment, controls, simulation, and engineering execution."
+              lead="Open to conversations around robotics, perception,autonomous navigation, system integration, deployment, controls, simulation, and engineering execution."
             />
 
             <div className="contact-buttons">
