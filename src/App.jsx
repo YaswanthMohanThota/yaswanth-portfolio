@@ -89,7 +89,7 @@ const projects = [
     hoverHint: 'See how this was built',
     hasExplore: true,
     exploreType: 'video',
-    videoEmbed: 'https://www.youtube.com/embed/RGB_MOCAP_DEMO?autoplay=1&mute=1&rel=0',
+    videoEmbed: 'https://www.youtube.com/embed/CBSdMQspTl4?autoplay=1&mute=1&rel=0',
     problem:
       'Commercial motion capture systems are accurate but expensive, closed, and difficult to adapt for custom robotics workflows. I wanted a system that could track robots reliably while staying portable, modular, and low-cost.',
     solution:
